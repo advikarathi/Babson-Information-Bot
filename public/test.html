@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Widget demo: Procurement | Babson College (mock page)</title>
+  <style>
+    /* Deliberately aggressive site CSS. If the Shadow DOM is doing its job, none
+       of these rules should change how the widget looks. */
+    * { box-sizing: content-box; }
+    button { background: hotpink !important; border: 4px dashed red !important; font-size: 30px !important; }
+    input, textarea { background: yellow !important; }
+    a { color: red !important; }
+    p, div { font-family: "Times New Roman", serif; line-height: 2.4; }
+
+    body { margin: 0; font-family: Georgia, serif; color: #464646; }
+    .notice { background: #eeaf00; color: #000; padding: 8px 24px; font: 14px Arial, sans-serif; }
+    header { background: #006644; color: #fff; padding: 20px 24px; font: bold 22px Arial, sans-serif; }
+    nav { background: #045236; padding: 10px 24px; font: 14px Arial, sans-serif; color: #fff; }
+    main { max-width: 760px; margin: 0 auto; padding: 24px; }
+    h1 { color: #006644; font-family: Arial, sans-serif; }
+  </style>
+</head>
+<body>
+  <div class="notice">Demo page for testing the chat widget. Not an official Babson College page.</div>
+  <header>Babson College (mock header)</header>
+  <nav>Business and Financial Services &rsaquo; Procurement</nav>
+  <main>
+    <h1>Procurement</h1>
+    <p>The Procurement office is dedicated to providing prompt, professional attention to each department's needs, while developing systems, policies, and procedures that ensure the best value for the college.</p>
+    <p>This page exists to demo the widget. The pink buttons and yellow inputs that this page's CSS tries to force should <strong>not</strong> appear inside the chat panel.</p>
+    <p><button type="button">A page button, styled by the site's CSS</button></p>
+    <p>Look for the green chat bubble in the bottom-right corner.</p>
+  </main>
+
+  <!-- The same embed the web team uses, with a relative path for this demo. -->
+  <script src="/widget.js" defer></script>
+</body>
+</html>
